@@ -30,13 +30,16 @@ Args:
 
     grid a 9x9 integer array where 0 indicates unfilled poistions
 
-Returns a solved grid if the second return value is true
-If the second return value is false then it means there is
-no solution starting with the input grid
+Returns:
+    Tuple{grid::Array{2}, is_solution_valid::Bool}
+
+    where `grid` is a solved grid if the second return value is true
+    If the second return value is false then it means there is
+        no solution starting with the input grid
 """
-function solve_sudoku(grid::Array{I})::Tuple{Array{Int8,2},Bool} where I <: Integer
+function solve_sudoku(grid)
     @assert size(grid) == (9, 9)
-    @assert in.(grid, Ref(0:9))
+    @assert all(in.(grid, Ref(0:9)))
     # these are the unfilled positions
     zero_pos = findall(==(0), grid)
 

@@ -1,7 +1,7 @@
 name = "SimpleSudoku"
 uuid = "8f8cde19-4581-4697-bfbd-917306c72405"
 authors = ["ZJ Dai <zhuojia.dai@gmail.com> and contributors"]
-version = "0.1.0"
+version = "0.1.1"
 
 [compat]
 julia = "1"
