@@ -1,7 +1,6 @@
 # SimpleSudoku
 
-This package has one function `solve_sudoku` which takes a 9x9 integer array as input (where 0)
-indicate unfilled positions and solves it. For example
+This package has one function `solve_sudoku` which takes a 9x9 integer array as input, where 0 indicate unfilled positions, and solves it. For example
 
 ```julia
 using SimpleSudoku
